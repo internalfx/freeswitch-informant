@@ -1,0 +1,2 @@
+
+modeule.exports = function () {}
