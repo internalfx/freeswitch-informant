@@ -1,6 +1,6 @@
 {
   "name": "@internalfx/freeswitch-informant",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A node.js server for sending freeswitch events as webhooks",
   "main": "index.js",
   "scripts": {},
@@ -10,6 +10,9 @@
   },
   "author": "Bryan Morris",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/internalfx/freeswitch-informant/issues"
   },
