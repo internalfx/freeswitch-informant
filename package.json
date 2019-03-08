@@ -23,6 +23,7 @@
     "google-libphonenumber": "^3.2.2",
     "modesl": "^1.2.0",
     "moment": "^2.24.0",
+    "promise-retry": "^1.1.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
     "sox.js": "^2.1.0"

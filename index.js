@@ -3,6 +3,7 @@ module.exports = function (config) {
   let Promise = require('bluebird')
   let esl = require('modesl')
   let _ = require('lodash')
+  let retry = require('promise-retry')
   let moment = require('moment')
   let xmlParser = require('xml2js').Parser({
     explicitRoot: false,
@@ -201,7 +202,9 @@ module.exports = function (config) {
           }
         })
 
-        await rp(payload)
+        await retry(function (retry, number) {
+          return rp(payload).catch(retry)
+        }, { retries: 20 })
 
         await Promise.map(deleteList, async function (file) {
           del(file, { force: true })
