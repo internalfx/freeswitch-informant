@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "description": "A node.js server for sending freeswitch events as webhooks",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/internalfx/freeswitch-informant.git"
@@ -16,6 +15,14 @@
   },
   "homepage": "https://github.com/internalfx/freeswitch-informant",
   "dependencies": {
+    "bluebird": "^3.5.3",
+    "del": "^4.0.0",
+    "google-libphonenumber": "^3.2.2",
+    "modesl": "^1.2.0",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sox.js": "^2.1.0"
   },
   "peerDependencies": {},
   "devDependencies": {
