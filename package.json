@@ -1,6 +1,6 @@
 {
   "name": "@internalfx/freeswitch-informant",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A node.js server for sending freeswitch events as webhooks",
   "main": "index.js",
   "scripts": {},
