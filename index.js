@@ -24,7 +24,13 @@ module.exports = function (config) {
 
   let cleanInput = function (input) {
     if (_.isString(input)) {
-      return input.trim().replace(config.techPrefix, '')
+      input = input.trim().replace(config.techPrefix, '')
+
+      if (input.length === 0) {
+        return null
+      }
+
+      return input
     } else {
       return undefined
     }
